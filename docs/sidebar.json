@@ -1,8 +1,9 @@
 {
   "ought": {
     "Overview": "/",
-    "Custom Solutions": "custom.html",
+    "Ought Text Classification Project": "starter.html",
     "Metrics": "metrics.html",
-    "Ought Text Classification Project": "starter.html"
+    "lstm": "lstm.html",
+    "bart": "bart.html"
   }
 }

@@ -10,14 +10,17 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Custom Solutions
-      url: custom.html
+      title: Ought Text Classification Project
+      url: starter.html
     - output: web,pdf
       title: Metrics
       url: metrics.html
     - output: web,pdf
-      title: Ought Text Classification Project
-      url: starter.html
+      title: lstm
+      url: lstm.html
+    - output: web,pdf
+      title: bart
+      url: bart.html
     output: web
     title: ought
   output: web
