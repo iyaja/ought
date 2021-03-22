@@ -8,10 +8,15 @@ from transformers import pipeline
 
 # Cell
 class BARTClassifier:
-    def __init__(self, train_json_path='data/train.jsonl', samples=100, metrics=[]):
+    def __init__(self, instructions='Label each of the following examples as "AI" or "NOT AI"', json='data/train.jsonl', samples=5):
+        self.instructions = instructions
+        self.context = load_jsonl(json)[:samples]
         self.clas = pipeline("zero-shot-classification", device=0)
-        labels = ["AI", "Not AI"]
+        self.labels = ["AI", "Not AI"]
 
     def predict(self, prompt):
-        pred = self.learn.predict(prompt)[0]
-        return 'NOT AI' if (pred == 'False') else 'AI'
+        prompt = make_prompt(self.instructions, self.context, {'text': prompt})
+        # to create a concrete prediction, take the last line and strip the "LABEL: " component
+        result = self.clas(prompt, self.labels)
+        pred = 'Not AI' if result['scores'][0] > result['scores'][1] else 'AI'
+        return pred

@@ -9,7 +9,7 @@ class Metrics:
         self.valid = load_jsonl(valid_path)
         print(f"loaded {len(self.valid)} examples")
 
-    def accuracy(self, predict_func, samples=20):
+    def accuracy(self, predict_func, samples=500):
         INSTRUCTIONS = 'Label each of the following examples as "AI" or "NOT AI"'
 
         hits = []
