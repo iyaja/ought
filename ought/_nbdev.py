@@ -2,13 +2,15 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"generate": "starter.ipynb",
+index = {"predict": "custom.ipynb",
+         "generate": "starter.ipynb",
          "load_jsonl": "starter.ipynb",
          "render_example": "starter.ipynb",
          "render_end_example": "starter.ipynb",
          "make_prompt": "starter.ipynb"}
 
-modules = ["starter.py"]
+modules = ["custom.py",
+           "starter.py"]
 
 doc_url = "https://iyaja.github.io/ought/"
 
