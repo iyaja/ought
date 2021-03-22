@@ -5,6 +5,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"generate": "starter.ipynb",
          "load_jsonl": "starter.ipynb",
          "render_example": "starter.ipynb",
+         "Label": "starter.ipynb",
          "render_end_example": "starter.ipynb",
          "make_prompt": "starter.ipynb"}
 
