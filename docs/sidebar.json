@@ -1,10 +1,10 @@
 {
   "ought": {
     "Overview": "/",
-    "Ought Text Classification Project": "starter.html",
+    "Starter Code": "starter.html",
     "GPT Zero-Shot Classification": "gpt.html",
     "Few-Shot LSTM Fine-Tuning": "lstm.html",
     "BART Zero-Shot Prediction Classification ": "bart.html",
-    "Results": "metrics.html"
+    "Metrics": "metrics.html"
   }
 }
