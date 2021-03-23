@@ -8,9 +8,9 @@ from transformers import pipeline
 
 # Cell
 class BARTClassifier:
-    def __init__(self, instructions='Label each of the following examples as "AI" or "NOT AI"', json='data/train.jsonl', samples=5):
+    def __init__(self, instructions='Label each of the following examples as "AI" or "NOT AI"', json='data/train.jsonl', samples=2):
         self.instructions = instructions
-        self.context = load_jsonl(json)[:samples]
+        self.context = uniform_samples(json, samples)
         self.clas = pipeline("zero-shot-classification", device=0)
         self.labels = ["AI", "Not AI"]
 

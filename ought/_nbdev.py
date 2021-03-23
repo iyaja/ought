@@ -2,23 +2,25 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"tokenizer": "01_starter.ipynb",
-         "tokenizer.pad_token": "01_starter.ipynb",
-         "model": "01_starter.ipynb",
-         "generate": "01_starter.ipynb",
+index = {"generate": "01_starter.ipynb",
          "load_jsonl": "01_starter.ipynb",
          "render_example": "01_starter.ipynb",
          "render_end_example": "01_starter.ipynb",
          "make_prompt": "01_starter.ipynb",
-         "GPTClassifier": "01_starter.ipynb",
+         "uniform_samples": "01_starter.ipynb",
          "Metrics": "02_metrics.ipynb",
          "LSTMClassifier": "03_lstm.ipynb",
-         "BARTClassifier": "04_bart.ipynb"}
+         "BARTClassifier": "04_bart.ipynb",
+         "GPTBase": "05_gpt.ipynb",
+         "GPTLMClassifier": "05_gpt.ipynb",
+         "GPTMatmulClassifier": "05_gpt.ipynb",
+         "GPTSimilarityClassifier": "05_gpt.ipynb"}
 
 modules = ["starter.py",
            "metrics.py",
            "lstm.py",
-           "bart.py"]
+           "bart.py",
+           "gpt.py"]
 
 doc_url = "https://iyaja.github.io/ought/"
 

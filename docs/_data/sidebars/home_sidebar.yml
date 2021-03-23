@@ -21,6 +21,9 @@ entries:
     - output: web,pdf
       title: bart
       url: bart.html
+    - output: web,pdf
+      title: gpt
+      url: gpt.html
     output: web
     title: ought
   output: web

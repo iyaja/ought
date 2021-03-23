@@ -9,9 +9,9 @@ from fastai.text.all import *
 
 # Cell
 class LSTMClassifier:
-    def __init__(self, train_json_path='data/train.jsonl', samples=100, metrics=[]):
+    def __init__(self, json='data/train.jsonl', samples=5, show_metrics=[]):
         self.path = train_json_path
-        self.df = pd.DataFrame(load_jsonl(train_json_path)).head(samples)
+        self.df = pd.DataFrame(uniform_samples(json, samples))
         self.dls = TextDataLoaders.from_df(self.df, path=train_json_path, text_col='text', label_col='label', valid_col=None, seq_len=50)
         self.learn = text_classifier_learner(self.dls, AWD_LSTM, drop_mult=0.5, metrics=metrics)
         self.learn.fine_tune(5, 5e-2)
