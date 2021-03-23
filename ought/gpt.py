@@ -22,7 +22,7 @@ class GPTBase:
         input_ids = self.tokenizer.encode(prompt, return_tensors="pt")
         generated_text_ids = self.model.generate(input_ids=input_ids.cuda(), max_length=max_length+len(input_ids[0]), do_sample=False)
         generated_text = self.tokenizer.decode(generated_text_ids[0], clean_up_tokenization_spaces=True)
-        post_prompt_text = generated_text[len(tokenizer.decode(input_ids[0], clean_up_tokenization_spaces=True)):]
+        post_prompt_text = generated_text[len(self.tokenizer.decode(input_ids[0], clean_up_tokenization_spaces=True)):]
         return prompt + post_prompt_text[:post_prompt_text.find(stop_token) if stop_token else None]
 
     def get_logits_and_tokens(self, text):
@@ -47,9 +47,9 @@ class GPTLMClassifier(GPTBase):
 
 # Cell
 class GPTMatmulClassifier(GPTBase):
-    def __init__(self, json='data/train.jsonl', samples_per_label=2):
+    def __init__(self, json='data/train.jsonl', samples=2):
         super(GPTMatmulClassifier, self).__init__()
-        self.samples = uniform_samples(json, samples_per_label)
+        self.samples = uniform_samples(json, samples)
         self.outs = []
         for sample in self.samples:
             input_ids = self.tokenizer.encode(sample['text'], return_tensors="pt")

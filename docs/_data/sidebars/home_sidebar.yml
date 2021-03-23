@@ -13,16 +13,16 @@ entries:
       title: Ought Text Classification Project
       url: starter.html
     - output: web,pdf
-      title: Metrics
+      title: Results
       url: metrics.html
     - output: web,pdf
-      title: lstm
+      title: Few-Shot LSTM Fine-Tuning
       url: lstm.html
     - output: web,pdf
-      title: bart
+      title: 'BART Zero-Shot Prediction Classification '
       url: bart.html
     - output: web,pdf
-      title: gpt
+      title: Title
       url: gpt.html
     output: web
     title: ought
