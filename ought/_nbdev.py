@@ -2,26 +2,26 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"generate": "01_starter.ipynb",
-         "load_jsonl": "01_starter.ipynb",
-         "render_example": "01_starter.ipynb",
-         "render_end_example": "01_starter.ipynb",
-         "make_prompt": "01_starter.ipynb",
-         "uniform_samples": "01_starter.ipynb",
-         "Metrics": "02_metrics.ipynb",
-         "EnsembleClassifier": "02_metrics.ipynb",
-         "LSTMClassifier": "03_lstm.ipynb",
-         "BARTClassifier": "04_bart.ipynb",
-         "GPTBase": "05_gpt.ipynb",
-         "GPTLMClassifier": "05_gpt.ipynb",
-         "GPTMatmulClassifier": "05_gpt.ipynb",
-         "GPTSimilarityClassifier": "05_gpt.ipynb"}
+index = {"generate": "00_starter.ipynb",
+         "load_jsonl": "00_starter.ipynb",
+         "render_example": "00_starter.ipynb",
+         "render_end_example": "00_starter.ipynb",
+         "make_prompt": "00_starter.ipynb",
+         "uniform_samples": "00_starter.ipynb",
+         "GPTBase": "01_gpt.ipynb",
+         "GPTLMClassifier": "01_gpt.ipynb",
+         "GPTMatmulClassifier": "01_gpt.ipynb",
+         "GPTSimilarityClassifier": "01_gpt.ipynb",
+         "LSTMClassifier": "02_lstm.ipynb",
+         "BARTClassifier": "03_bart.ipynb",
+         "Metrics": "04_metrics.ipynb",
+         "EnsembleClassifier": "04_metrics.ipynb"}
 
 modules = ["starter.py",
-           "metrics.py",
+           "gpt.py",
            "lstm.py",
            "bart.py",
-           "gpt.py"]
+           "metrics.py"]
 
 doc_url = "https://iyaja.github.io/ought/"
 

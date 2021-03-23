@@ -13,8 +13,8 @@ entries:
       title: Ought Text Classification Project
       url: starter.html
     - output: web,pdf
-      title: Results
-      url: metrics.html
+      title: GPT Zero-Shot Classification
+      url: gpt.html
     - output: web,pdf
       title: Few-Shot LSTM Fine-Tuning
       url: lstm.html
@@ -22,8 +22,8 @@ entries:
       title: 'BART Zero-Shot Prediction Classification '
       url: bart.html
     - output: web,pdf
-      title: Title
-      url: gpt.html
+      title: Results
+      url: metrics.html
     output: web
     title: ought
   output: web

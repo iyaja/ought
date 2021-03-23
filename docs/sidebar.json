@@ -2,9 +2,9 @@
   "ought": {
     "Overview": "/",
     "Ought Text Classification Project": "starter.html",
-    "Results": "metrics.html",
+    "GPT Zero-Shot Classification": "gpt.html",
     "Few-Shot LSTM Fine-Tuning": "lstm.html",
     "BART Zero-Shot Prediction Classification ": "bart.html",
-    "Title": "gpt.html"
+    "Results": "metrics.html"
   }
 }
